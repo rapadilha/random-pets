@@ -4,13 +4,21 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/output.css" rel="stylesheet">
   <title>Document</title>
 </head>
-<body>
-  <img id="image" alt="Ramdon pet" src="">
-  <button id="dog-button">Get random dog</button>
-  <button id="cat-button">Get random cat</button>
-  <button id="random-pet">Surprise me</button>
+<body class="bg-gray-900 flex flex-col">
+  <div class="bg-gray-600 runded-3xl self-center px-8 py-3 mt-3 rounded-3xl">
+    <h1 class="text-4xl grid justify-center font-bold text-gray-200">Random Pet</h1>
+  </div>
+  <div class="grid justify-center text-white py-5">
+    <img class="object-contain h-46 w-96 rounded-3xl" id="image" alt="Random pet" src="">
+  </div>
+  <div class="flex justify-center font-mono font-bold">
+    <button class="hover:bg-gray-400 w4/5 mx-auto texte-center py-2 px-7 text-white rounded-full bg-gray-500" id="dog-button">Get random dog</button>
+    <button class="hover:bg-gray-400 w4/5 mx-auto texte-center py-2 px-7 text-white rounded-full bg-gray-500" id="random-pet">Surprise me</button>
+    <button class="hover:bg-gray-400 w4/5 mx-auto texte-center py-2 px-7 text-white rounded-full bg-gray-500" id="cat-button">Get random cat</button>
+  </div>
   <script src="./main.js" type="module"></script>
 </body>
 </html>
