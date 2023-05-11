@@ -20,9 +20,9 @@ const randomCat = () => {
 };
 
 surpeiseButton.addEventListener('click', () => {
-    Promise.race([
-        randomCat(),
-        randomDog()
+    Promise.any([
+        randomDog(),
+        randomCat()
     ]);
 });
 
